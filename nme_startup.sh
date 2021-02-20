@@ -9,3 +9,6 @@ export GENOMES=/cluster/work/nme/genomes
 
 ## LMOD variables
 export LMOD_IGNORE_CACHE=1
+
+## Singularity cache
+export SINGULARITY_CACHEDIR=/cluster/work/nme/tmp/.singularity_cache
