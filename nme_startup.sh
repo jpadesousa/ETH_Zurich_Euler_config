@@ -6,6 +6,7 @@ export WORK=/cluster/work/nme
 export PUBLIC=/nfs/nas12.ethz.ch/fs1201/green_groups_nme_public
 export LABRADOR=/nfs/green-nme.ethz.ch/data/labrador
 export GENOMES=/cluster/work/nme/genomes
+export NF_PIPELINES=/cluster/work/nme/software/apps/nextflow/nf_pipelines/
 
 ## LMOD variables
 export LMOD_IGNORE_CACHE=1
