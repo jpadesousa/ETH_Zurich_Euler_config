@@ -15,4 +15,5 @@ export LMOD_IGNORE_CACHE=1
 export SINGULARITY_CACHEDIR=/cluster/work/nme/tmp/.singularity_cache
 
 ## Change default startup modules
-module load gcc/6.3.0
+module purge
+module load StdEnv gcc/6.3.0 tmux
