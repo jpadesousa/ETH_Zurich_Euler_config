@@ -18,5 +18,15 @@ export SINGULARITY_CACHEDIR=/cluster/work/nme/tmp/.singularity_cache
 module purge
 module load StdEnv gcc/6.3.0
 
-# Setting default permissions
+## Setting default permissions
 umask 0007
+
+## Copy NME SeqMonk preferences to the home folder
+if [ ! -f $HOME/seqmonk_prefs.txt ]; then ln -s /cluster/work/nme/software/config/seqmonk_prefs.txt $HOME/seqmonk_prefs.txt; fi
+
+## Create R preferences file in the home folder
+if [ ! -f $HOME/.Renviron ]; then touch $HOME/.Renviron; fi
+grep -qF "http_proxy" .Renviron || echo http_proxy=${http_proxy-'http://proxy.ethz.ch:3128'} >> $HOME/.Renviron
+grep -qF "https_proxy" .Renviron || echo https_proxy=${https_proxy-'http://proxy.ethz.ch:3128'} >> $HOME/.Renviron
+grep -qF "R_HISTSIZE" .Renviron || echo R_HISTSIZE=100000 >> $HOME/.Renviron
+grep -qF "R_LIBS_USER" .Renviron || echo R_LIBS_USER='/cluster/work/nme/software/libraries/R/4.1.3' >> $HOME/.Renviron

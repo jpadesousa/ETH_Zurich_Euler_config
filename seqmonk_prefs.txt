@@ -1,0 +1,12 @@
+# SeqMonk Preferences file.  Do not edit by hand.
+GenomeBase	/cluster/work/nme/genomes/SeqMonk
+DataLocation	/cluster/work/nme/seqdata
+SaveLocation	/nfs/nas12.ethz.ch/fs1201/green_groups_nme_public
+RLocation	R
+SuspendRCleanup	0
+Proxy	proxy.ethz.ch	3128
+GenomeDownloadLocation	https://www.bioinformatics.babraham.ac.uk/seqmonk/genomes/
+TempDirectory	/scratch
+Memory	0
+CheckForUpdates	1
+IgnoredFeatures	sts	source	misc_feature	exon
