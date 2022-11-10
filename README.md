@@ -1,4 +1,4 @@
-# ETH Zürich Euler cluster config files used by the NME lab
+# NME lab Euler cluster config files
 
 This repository contains the config files used by the NME lab in the Euler cluster from ETH Zürich.<br/>
 <br clear="all" />
